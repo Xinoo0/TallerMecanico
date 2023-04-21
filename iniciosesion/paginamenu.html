@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Menú de Taller Mecánico</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #f2f2f2;
+		}
+		h1 {
+			text-align: center;
+			margin-top: 50px;
+		}
+		.menu {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			margin: 50px 0;
+		}
+		.menu-item {
+			border: 2px solid #333;
+			border-radius: 10px;
+			box-shadow: 2px 2px 5px #888888;
+			background-color: #fff;
+			margin: 20px;
+			width: 300px;
+			height: 200px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			transition: all 0.2s ease-in-out;
+		}
+		.menu-item:hover {
+			transform: translateY(-10px);
+			box-shadow: 4px 4px 10px #888888;
+		}
+		.menu-item a {
+			text-decoration: none;
+			color: #333;
+			font-size: 20px;
+			font-weight: bold;
+			margin-top: 10px;
+		}
+		.menu-item img {
+			width: 80px;
+			height: 80px;
+			margin-bottom: 10px;
+		}
+	</style>
+</head>
+<body>
+	<h1>Menú de Taller Mecánico</h1>
+	<div class="menu">
+		<div class="menu-item">
+			<img src="https://dummyimage.com/80x80/000/fff&text=1" alt="Servicio 1">
+			<a href="#">Servicio 1</a>
+		</div>
+		<div class="menu-item">
+			<img src="https://dummyimage.com/80x80/000/fff&text=2" alt="Servicio 2">
+			<a href="#">Servicio 2</a>
+		</div>
+		<div class="menu-item">
+			<img src="https://dummyimage.com/80x80/000/fff&text=3" alt="Servicio 3">
+			<a href="#">Servicio 3</a>
+		</div>
+		<div class="menu-item">
+			<img src="https://dummyimage.com/80x80/000/fff&text=4" alt="Servicio 4">
+			<a href="#">Servicio 4</a>
+		</div>
+	</div>
+</body>
+</html>
