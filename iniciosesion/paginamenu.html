@@ -3,15 +3,37 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Menú de Taller Mecánico</title>
+	<link rel="shortcut icon" href="/iniciosesion/fotos/logo.jpg">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
 	<style>
+ul {
+  border: 1px solid #555;
+}
+
+li {
+  text-align: center;
+  border-bottom: 1px solid #000000;
+}
+
+li:last-child {
+  border-bottom: none;
+}
+
 		body {
 			font-family: Arial, sans-serif;
-			background-color: #f2f2f2;
+			background-color: #424141;
 		}
 		h1 {
 			text-align: center;
 			margin-top: 50px;
+            background-color: #ffffff26;
+			color: #ffffff;
+			
 		}
+		
 		.menu {
 			display: flex;
 			flex-wrap: wrap;
@@ -48,27 +70,61 @@
 			height: 80px;
 			margin-bottom: 10px;
 		}
+		video{
+  width: 100%;
+
+}
 	</style>
 </head>
 <body>
-	<h1>Menú de Taller Mecánico</h1>
-	<div class="menu">
-		<div class="menu-item">
-			<img src="https://dummyimage.com/80x80/000/fff&text=1" alt="Servicio 1">
-			<a href="#">Servicio 1</a>
+	<ul>
+		<li><a href="paginamenu.html">Inicio</a></li>
+		<li><a href="Marcasquetrabajamos.html">Marcas que trabajamos</a></li>
+		<li><a href="Contactanos.html">Contactos</a></li>
+		<li><a href="Sobrenosotros.html">Sobre nosotros</a></li>
+	  </ul>
+	<div id="myCarousel" class="carousel slide" data-ride="carousel">
+		<!-- Indicators -->
+		<ol class="carousel-indicators">
+		  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+		  <li data-target="#myCarousel" data-slide-to="1"></li>
+		  <li data-target="#myCarousel" data-slide-to="2"></li>
+		</ol>
+	  
+		<!-- Wrapper for slides -->
+		<div class="carousel-inner">
+		  <div class="item active">
+			<h1>Revision de auto</h1>
+			<video onloadedmetadata="this.muted=true" autoplay loop>
+				<source src="videos/Revisionauto.mp4">
+			  </video>
+		  </div>
+	  
+		  <div class="item">
+			<h1>Lavado de auto</h1>
+			<video onloadedmetadata="this.muted=true" autoplay loop>
+				<source src="videos/lavadodeautoss.mp4">
+			  </video>
+		  </div>
+	  
+		  <div class="item">
+			<h1>Cambio y revision de Neumaticos</h1>
+			<video onloadedmetadata="this.muted=true" autoplay loop>
+				<source src="videos/cambiodeneumaticos.mp4">
+			  </video>
+		  </div>
 		</div>
-		<div class="menu-item">
-			<img src="https://dummyimage.com/80x80/000/fff&text=2" alt="Servicio 2">
-			<a href="#">Servicio 2</a>
-		</div>
-		<div class="menu-item">
-			<img src="https://dummyimage.com/80x80/000/fff&text=3" alt="Servicio 3">
-			<a href="#">Servicio 3</a>
-		</div>
-		<div class="menu-item">
-			<img src="https://dummyimage.com/80x80/000/fff&text=4" alt="Servicio 4">
-			<a href="#">Servicio 4</a>
-		</div>
-	</div>
+	  
+		<!-- Left and right controls -->
+		<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+		  <span class="glyphicon glyphicon-chevron-left"></span>
+		  <span class="sr-only">Anterior</span>
+		</a>
+		<a class="right carousel-control" href="#myCarousel" data-slide="next">
+		  <span class="glyphicon glyphicon-chevron-right"></span>
+		  <span class="sr-only">Siguente</span>
+		</a>
+	  </div>
+	  
 </body>
 </html>
