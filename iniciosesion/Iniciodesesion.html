@@ -16,15 +16,15 @@
       </video>
       <div class="center">
         <h1 img="/foto">Inicio de sesion</h1>
-        <form method="post">
+        <form method="" id="fmrlogin">
           <div class="txt_field">
             <label>Nombre Usuario</label>
-            <input type="text" name="userNom" id="userNom" required>
+            <input type="text" name="userName" id="userName">
           </div>
 
           <div class="txt_field">
             <label for="Correo">Correo</label>
-            <input type="email" id="userEmail" name="userEmail" required>
+            <input type="email" id="userEmail" name="userEmail" >
 
 
 
@@ -34,17 +34,16 @@
 
           <div class="txt_field">
             <label for="userPassword">Contraseña</label>
-            <input type="password" required>
-
-
-
+            <input type="password" id="userPassword">
 
 
 
           </div>
 
+          <p id="warnings"></p>
+
           <a href="paginamenu.html">
-            <input type="button" value="Iniciar sesion">
+            <input type="submit" value="Iniciar sesion">
             </a>
         <tr>
           <div class="link_Ayuda">
@@ -59,7 +58,7 @@
       </div>
 
   </header>
-  <script src="ejemplo1.js"></script>
+  <script src="js/ejemplo1.js"></script>
 </body>
 
 </html>
