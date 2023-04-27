@@ -1,48 +1,55 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
 	<meta charset="UTF-8">
 	<title>Menú de Taller Mecánico</title>
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="shortcut icon" href="/iniciosesion/fotos/logo.jpg">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
 	<style>
-ul {
-  border: 1px solid #555;
-}
+		ul {
+			border: 1px solid #555;
+		}
 
-li {
-  text-align: center;
-  border-bottom: 1px solid #000000;
-}
-li {
-  display: inline;
-}
+		li {
+			text-align: center;
+			border-bottom: 1px solid #000000;
+		}
 
-li:last-child {
-  border-bottom: none;
-}
+		li {
+			display: inline;
+		}
+
+		li:last-child {
+			border-bottom: none;
+		}
 
 		body {
 			font-family: Arial, sans-serif;
 			background-color: #424141;
 		}
+
 		h1 {
 			text-align: center;
 			margin-top: 50px;
-            background-color: #ffffff26;
+			background-color: #ffffff26;
 			color: #ffffff;
-			
+
 		}
-		
+
 		.menu {
 			display: flex;
 			flex-wrap: wrap;
 			justify-content: center;
-			margin: 50px 0;
+			margin: 0px 0;
 		}
+
 		.menu-item {
 			border: 2px solid #333;
 			border-radius: 10px;
@@ -57,10 +64,12 @@ li:last-child {
 			justify-content: center;
 			transition: all 0.2s ease-in-out;
 		}
+
 		.menu-item:hover {
 			transform: translateY(-10px);
 			box-shadow: 4px 4px 10px #888888;
 		}
+
 		.menu-item a {
 			text-decoration: none;
 			color: #333;
@@ -68,66 +77,72 @@ li:last-child {
 			font-weight: bold;
 			margin-top: 10px;
 		}
+
 		.menu-item img {
 			width: 80px;
 			height: 80px;
 			margin-bottom: 10px;
 		}
-		video{
-  width: 100%;
 
-}
+		video {
+			width: 1200px;
+
+		}
 	</style>
 </head>
+
 <body>
-	<ul>
-		<li><a href="paginamenu.html">Inicio</a></li>
-		<li><a href="Marcasquetrabajamos.html">Marcas que trabajamos</a></li>
-		<li><a href="Contactanos.html">Contactos</a></li>
-		<li><a href="Sobrenosotros.html">Sobre nosotros</a></li>
-	  </ul>
-	<div id="myCarousel" class="carousel slide" data-ride="carousel">
+	<div class="w3-sidebar w3-bar-block w3-black w3-xxlarge" style="width:70px">
+		<a href="paginamenu.html" class="w3-bar-item w3-button"><i class="fa fa-home"></i></a>
+		<a href="Marcasquetrabajamos.html" class="w3-bar-item w3-button"><i class="fa fa-car"></i></a>
+		<a href="Contactanos.html" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i></a>
+	    <a href="Sobrenosotros.html" class="w3-bar-item w3-button"><i class="fa fa-globe"></i></a>
+	    <a href="Tienda.html" class="w3-bar-item w3-button"><i class="fa fa-search"></i></a>
+		<a href="Certificaciones.html" class="w3-bar-item w3-button"><i class="fa fa-file"></i></a>
+	</div>
+	<div id="myCarousel" class="carousel slide" data-ride="carousel" style="margin-left:80px">
 		<!-- Indicators -->
 		<ol class="carousel-indicators">
-		  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-		  <li data-target="#myCarousel" data-slide-to="1"></li>
-		  <li data-target="#myCarousel" data-slide-to="2"></li>
+			<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+			<li data-target="#myCarousel" data-slide-to="1"></li>
+			<li data-target="#myCarousel" data-slide-to="2"></li>
 		</ol>
-	  
+
 		<!-- Wrapper for slides -->
 		<div class="carousel-inner">
-		  <div class="item active">
-			<h1>Revision de auto</h1>
-			<video onloadedmetadata="this.muted=true" autoplay loop>
-				<source src="videos/Revisionauto.mp4">
-			  </video>
-		  </div>
-	  
-		  <div class="item">
-			<h1>Lavado de auto</h1>
-			<video onloadedmetadata="this.muted=true" autoplay loop>
-				<source src="videos/lavadodeautoss.mp4">
-			  </video>
-		  </div>
-	  
-		  <div class="item">
-			<h1>Cambio y revision de Neumaticos</h1>
-			<video onloadedmetadata="this.muted=true" autoplay loop>
-				<source src="videos/cambiodeneumaticos.mp4">
-			  </video>
-		  </div>
+			<div class="item active">
+				<h1>Revision de auto</h1>
+				<video onloadedmetadata="this.muted=true" autoplay loop>
+					<source src="videos/Revisionauto.mp4">
+				</video>
+			</div>
+
+			<div class="item">
+				<h1>Lavado de auto</h1>
+				<video onloadedmetadata="this.muted=true" autoplay loop>
+					<source src="videos/lavadodeautoss.mp4">
+				</video>
+			</div>
+
+			<div class="item">
+				<h1>Cambio y revision de Neumaticos</h1>
+				<video onloadedmetadata="this.muted=true" autoplay loop>
+					<source src="videos/cambiodeneumaticos.mp4">
+				</video>
+			</div>
 		</div>
-	  
+
 		<!-- Left and right controls -->
 		<a class="left carousel-control" href="#myCarousel" data-slide="prev">
-		  <span class="glyphicon glyphicon-chevron-left"></span>
-		  <span class="sr-only">Anterior</span>
+			<span class="glyphicon glyphicon-chevron-left"></span>
+			<span class="sr-only">Anterior</span>
 		</a>
 		<a class="right carousel-control" href="#myCarousel" data-slide="next">
-		  <span class="glyphicon glyphicon-chevron-right"></span>
-		  <span class="sr-only">Siguente</span>
+			<span class="glyphicon glyphicon-chevron-right"></span>
+			<span class="sr-only">Siguente</span>
 		</a>
-	  </div>
-	  
+	</div>
+
 </body>
+
 </html>
