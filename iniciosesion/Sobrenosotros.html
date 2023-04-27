@@ -2,11 +2,137 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="shortcut icon" href="/iniciosesion/fotos/logo.jpg">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+      ul {
+        border: 1px solid #555;
+      }
+      
+      li {
+        text-align: center;
+        border-bottom: 1px solid #000000;
+      }
+      li {
+        display: inline;
+      }
+      
+      li:last-child {
+        border-bottom: none;
+      }
+      
+          body {
+            font-family: Arial, sans-serif;
+            background-color: #424141;
+          }
+          h1 {
+            text-align: center;
+            margin-top: 50px;
+                  background-color: #ffffff26;
+            color: #ffffff;
+            
+          }
+          
+          .menu {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 50px 0;
+          }
+          .menu-item {
+            border: 2px solid #333;
+            border-radius: 10px;
+            box-shadow: 2px 2px 5px #888888;
+            background-color: #fff;
+            margin: 20px;
+            width: 300px;
+            height: 200px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.2s ease-in-out;
+          }
+          .menu-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 4px 4px 10px #888888;
+          }
+          .menu-item a {
+            text-decoration: none;
+            color: #333;
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 10px;
+          }
+          .menu-item img {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 10px;
+          }
+          video{
+        width: 100%;
+      
+      }
+        </style>
+
+    
     <title>Sobre nosotros</title>
 </head>
 <body>
+  <div>
+
+    <div class="w3-sidebar w3-bar-block w3-collapse w3-card w3-animate-right" style="width:200px;right:0;" id="mySidebar">
+      <button class="w3-bar-item w3-button w3-large w3-hide-large" onclick="w3_close()">Close &times;</button>
+      <a href="#" class="w3-bar-item w3-button">Link 1</a>
+      <a href="#" class="w3-bar-item w3-button">Link 2</a>
+      <a href="#" class="w3-bar-item w3-button">Link 3</a>
+    </div>
+    
+    <div class="w3-main" style="margin-right:200px">
+    <div class="w3-teal">
+      <button class="w3-button w3-teal w3-xlarge w3-right w3-hide-large" onclick="w3_open()">&#9776;</button>
+  
+    </div>
+    
+    <script>
+    function w3_open() {
+      document.getElementById("mySidebar").style.display = "block";
+    }
+    
+    function w3_close() {
+      document.getElementById("mySidebar").style.display = "none";
+    }
+    </script>
+      
+
+
+    <h1>Nosotros</h1>
+    <p>
+     Somos una empresa, que se dedica al rubro automotriz de alta gama, trabajamos con marcas europeas,
+     japonesas y americanas, contamos con 20 años de experiencia, la cual nos a llevado a estar dentro de
+     las 20 empresas mas conocidas y de calidad con el servicio de repuestos, mantenciones o reparaciones 
+     de vehiculos de lujo y contamos con todas las certificiaciones correspondientes de las marcas que trabajamos.
+    </p>
+</div>
+<div>
+    <h1>Nuestro Personal</h1>
+    <p>
+     Nuestro personal cuenta con certificaciones de las marcas para realizar las manteciones, reparaciones, etc.
+     De esta manera aseguramos garantias al momento de realizar el trabajo en el vehiculo, tambien garantizamos 
+     un trabajo de calidad con respecto a lo que necesite el vehiculo.
+    </p>
+</div>
+<div>
+    <h1>Equipo Administrativo</h1>
+    <ol>
+        <li>Gerente: Elias Coñoman</li>
+        <li>RRHH: Eduardo Salazar</li>
+        <li>Contador: Victor Morales</li>
+        <li>Atencion: Javiera Valdez</li>
+    </ol>
+</div>
     
 </body>
 </html>
